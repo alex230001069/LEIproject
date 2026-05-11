@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 50%;
+  height: 40px;
+  background: #f1f1f1;
+}
+
+form.example button {
+  width: 40px;
+  height: 40px;
+  background-image: url("indeximages/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.clubes{
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    height: 200px;
+    width: 200px;
+}
