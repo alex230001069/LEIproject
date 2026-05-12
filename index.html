@@ -1,22 +1,28 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <script src="Jscript.js" defer></script>
     </head>
     <body>
         <br><br>
-        <h1 style="text-decoration: solid;">BEM VINDO A BEANFOOT</h1>
+        <container>
+            <div id="menuBurguer" hidden></div>
+            <button id="burguer" onClick="moreOptions()"></button>
+        </container>
 
-        <br><br>
-        <form class="example" action="">
-            <input type="text" placeholder="Pesquise um clube..." name="search">
-            <button type="submit"></button>
-        </form>
+        <div id="pesquisaTeam">
+            <h1 style="text-decoration: solid;">BEM VINDO A BEANFOOT</h1>
 
-
+            <br><br>
+            <form class="example" action="">
+                <input type="text" placeholder="Pesquise um clube..." name="search">
+                <button></button>
+            </form>
+        </div>
 
         
 
-        <div style="padding-top: 10%;">
+        <!--<div style="padding-top: 10%;">
         <h3>Clique para ver as estatísticas do clube</h3>
         <button class="clubes" style="background-image: url(indeximages/benficalogo.png);"></button>
         <button class="clubes" style="background-image: url(indeximages/psglogo.png);"></button>
@@ -25,7 +31,7 @@
         <button class="clubes" style="background-image: url(indeximages/borussialogo.png);"></button>
         <button class="clubes" style="background-image: url(indeximages/realmadridlogo.png);"></button>
         <button class="clubes" style="background-image: url(indeximages/westhamlogo.png);"></button>
-        </div>
+        </div>-->
 
     </body>
 </html>
