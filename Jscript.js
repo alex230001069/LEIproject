@@ -15,12 +15,21 @@ async function getIconChamp(){
 
 
 const getTeam = document.getElementById("getTeam");
-getTeam.addEventListener("click", singleTeam);
+getTeam.addEventListener("click", randomTeam);
 
 const imgTeam = document.getElementById("imgTeam");
 
-async function singleTeam(){
-    const response = await fetch("https://v3.football.api-sports.io/teams?id=33", {
+function randomTeam(){
+    const idTeam = getRandomInt(60);
+    singleTeam(idTeam);
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+async function singleTeam(idTeam){
+    const response = await fetch(`https://v3.football.api-sports.io/teams?id=${idTeam}`, {
         "method": "GET",
         "headers": {
             "x-apisports-key": "0fc8c78b4a67bec892a0a377c63f9dd1"
@@ -34,10 +43,12 @@ async function singleTeam(){
 
     const data = await response.json();
 
-    const teamIMG= data.response[0].logo;
+    const team= data.response[0];
     
-    imgTeam.src = teamIMG;
+    console.log(data);
+
+    imgTeam.src=data.response[0].team.logo;
+    
 
 }
-
 
