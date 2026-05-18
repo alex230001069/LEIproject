@@ -67,14 +67,22 @@ form.example::after {
 }
 
 #menuBurguer{
+
     background-color: cornflowerblue;
+    padding-top: 50px;
+    padding-left: 2px;
     width: 150px;
-    height:max-content;
+    height:200px;
     border: 2px solid blue;
-    position: absolute;
+    position:absolute;
 }
 
-.expandMenu{
-    width: 200px;
-    height: 200px;
+.menuOptions{
+    background-color: blueviolet;
+    color: white;
+    padding: 2px;
+    border: 2px dotted white;
+    position: relative;
+
 }
+
